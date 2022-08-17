@@ -1,0 +1,14 @@
+.border-test {
+  border: thick double #32a1ce;
+}
+
+
+.table-row td {
+  /*padding: var(--space-xs) var(--space-s);*/
+  padding: var(--space-xs) var(--space-xs);
+}
+
+/* make the table field take all space needed with no wrap*/
+[data-expression] {
+  white-space: inherit;
+}
