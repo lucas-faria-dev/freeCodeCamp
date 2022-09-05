@@ -1,7 +1,69 @@
-input {
-  display: block;
+:root {
+  --primary-color: #322214;
+  --secondary-color: #917d6a;
+  --opposite-color-1: #2f3438;
+  --opposite-color-2: #7C898B;
+  --checkboxes-radios-color: #a88261a8;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--primary-color);
+  color: var(--opposite-color-1);
+  font-family: 'Courier New';
+  font-size: 18px;
+}
+
+h1,
+p {
+  margin: 1em auto;
+  text-align: center;
+  color: var(--opposite-color-2);
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2em 0px;
+  border-bottom: 1px solid var(--opposite-color-2);
+  max-width: 70%;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
 }
 
 .inline {
-  display: inline;
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  color: var(--primary-color);
+}
+
+label {
+  margin: 0.5rem 0;
+  display: block;
+  color: var(--opposite-color-2)
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--checkboxes-radios-color);
 }

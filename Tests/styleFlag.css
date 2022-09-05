@@ -1,0 +1,128 @@
+.flag-back {
+  position: absolute;
+  top: 125px;
+  left: 65px;
+  width: 200px;
+  height: 160px;
+  border-left: 50px solid #c00;
+  border-right: 50px solid #c00;
+  background-color: #fff;
+}
+
+.main-tri {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-right: 42px solid #fff;
+  border-left: 42px solid #fff;
+  border-bottom: 120px solid #c00;
+  position: absolute;
+  top: 130px;
+  left: 170px;
+  z-index: 3;
+}
+
+.sec-main-tri {
+  display: block;
+  width: 25px;
+  height: 0;
+  overflow: hidden;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-top: 60px solid #c00;
+  position: absolute;
+  top: 170px;
+  left: 180px;
+  z-index: 3;
+}
+
+.right-main-tri {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-right: 50px solid transparent;
+  border-top: 50px solid #c00;
+  position: absolute;
+  top: 200px;
+  left: 235px;
+  z-index: 5;
+}
+
+.right-top-tri {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-right: 20px solid #c00;
+  border-top: 20px solid transparent;
+  position: absolute;
+  top: 180px;
+  left: 235px;
+  z-index: 5;
+}
+
+.right-bot-tri {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-left: 30px solid #c00;
+  border-top: 30px solid transparent;
+  position: absolute;
+  top: 207px;
+  left: 250px;
+  z-index: 5;
+}
+
+.left-main-tri {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-left: 50px solid transparent;
+  border-top: 50px solid #c00;
+  position: absolute;
+  top: 200px;
+  left: 145px;
+  z-index: 5;
+}
+
+.left-top-tri {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-left: 20px solid #c00;
+  border-top: 20px solid transparent;
+  position: absolute;
+  top: 180px;
+  left: 170px;
+  z-index: 5;
+}
+
+.left-bot-tri {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-right: 30px solid #c00;
+  border-top: 30px solid transparent;
+  position: absolute;
+  top: 207px;
+  left: 150px;
+  z-index: 5;
+}
+
+.stem {
+  display: block;
+  width: 10px;
+  height: 20px;
+  background-color: #c00;
+  overflow: hidden;
+  position: absolute;
+  top: 250px;
+  left: 206px;
+  z-index: 5;
+}
