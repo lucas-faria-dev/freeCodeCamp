@@ -7,9 +7,9 @@
 }
 
 body {
-  width: 100%;
+  width: 50%;
   height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   background-color: var(--primary-color);
   color: var(--opposite-color-1);
   font-family: 'Courier New';
@@ -24,10 +24,6 @@ p {
 }
 
 form {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
-  margin: 0 auto;
   padding-bottom: 2em;
 }
 
@@ -66,4 +62,13 @@ label {
 input[type="radio"],
 input[type="checkbox"] {
   accent-color: var(--checkboxes-radios-color);
+}
+
+select[id="feeling"] {
+  width: 101%;
+}
+
+input[type="submit"] {
+  margin: 0px 25%;
+  width: 30%;
 }
