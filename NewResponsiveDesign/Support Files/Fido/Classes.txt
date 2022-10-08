@@ -1,0 +1,24 @@
+#LoginForm > div.text-center.signInButton
+
+
+.dam-loader[_ngcontent-hsu-c65] span[_ngcontent-hsu-c65] i[_ngcontent-hsu-c65]:nth-child(2), .dam-loader[_ngcontent-hsu-c65] span[_ngcontent-hsu-c65] i[_ngcontent-hsu-c65]:nth-child(3) {
+    -webkit-animation: dam-loader2 .6s infinite;
+    animation: dam-loader2 .6s infinite;
+}
+<style>
+.dam-loader[_ngcontent-hsu-c65] span[_ngcontent-hsu-c65] i[_ngcontent-hsu-c65]:nth-child(2) {
+    left: -16px;
+}
+<style>
+.dam-loader[_ngcontent-hsu-c65] span[_ngcontent-hsu-c65] i[_ngcontent-hsu-c65] {
+    position: absolute;
+    top: -4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    -webkit-animation-timing-function: cubic-bezier(0,1,1,0);
+    animation-timing-function: cubic-bezier(0,1,1,0);
+}
+button:not(:hover) dam-loader span i {
+    background-color: #000!important;
+}
