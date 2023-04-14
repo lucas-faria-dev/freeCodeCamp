@@ -18,3 +18,24 @@ Code	Output
 \r	carriage return
 \b	word boundary
 \f	form feed
+
+## Arrays
+### push
+Adds element to array;
+array.push(object);
+
+### pop
+Removes last element in the array
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+
+### shift
+Removes first element in the array
+
+### unshift
+Adds an element as the first element
+const ourArray = ["Stimpson", "J", "cat"];
+ourArray.shift();
+ourArray.unshift("Happy");
