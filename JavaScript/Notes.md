@@ -18,3 +18,7 @@ Code	Output
 \r	carriage return
 \b	word boundary
 \f	form feed
+
+
+Modify Array Data With Indexes
+Unlike strings, the entries of arrays are mutable and can be changed freely, even if the array was declared with const.
