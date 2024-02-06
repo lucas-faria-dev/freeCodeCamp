@@ -59,3 +59,12 @@ Here's how we would add a bark property to ourDog:
 ourDog.bark = "bow-wow";
 
 To check if a property on a given object exists or not, you can use the .hasOwnProperty() method. someObject.hasOwnProperty(someProperty) returns true or false depending on if the property is found on the object or not.
+
+### Binary system review
+https://www.youtube.com/watch?v=ku4KOFQ-bB4
+
+### Conditional (Ternary) Operator
+The syntax is a ? b : c, where a is the condition, b is the code to run when the condition returns true, and c is the code to run when the condition returns false.
+
+
+I need this! map, filter, and reduce
