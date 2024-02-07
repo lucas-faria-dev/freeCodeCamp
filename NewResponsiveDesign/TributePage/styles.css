@@ -1,8 +1,19 @@
 :root {
-  --font-color: #d0d0d5;
+  --main-font-color: #d0d0d5;
   --font-family: 'Roboto', 'Courier New', Courier, monospace;
+  --font-size-xs: 12px;
+  --font-size-base: 16px;
+  --gray00: #ffffff;
+  --gray05: #f5f6f7;
+  --gray10: #dfdfe2;
+  --gray15: #d0d0d5;
+  --gray75: #3b3b4f;
+  --gray80: #2a2a40;
+  --gray85: #1b1b32;
+  --gray90: #0a0a23;
 }
 
+/*--- Fonts ---*/
 @font-face {
   font-family: 'Roboto';
   src: url('roboto-mono/RobotoMono-Regular.ttf') format('truetype');
@@ -80,8 +91,81 @@
   margin: 0;
 }
 
-body {
-  background-color: black;
-  color: var(--font-color);
+body,
+#subtitle {
+  background-color: var(--gray90);
+  color: var(--main-font-color);
   font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 48px 0px;
+}
+
+h2,
+#subtitle {
+  margin: 16px 0px;
+}
+
+p {
+  text-align: justify;
+  margin: 8px 0px 16px 0px;
+}
+
+a,
+a:visited {
+  color: var(--main-font-color);
+  text-decoration: underline;
+  outline: 0;
+  font-size: inherit;
+}
+
+footer,
+.infobox-caption {
+  font-size: var(--font-size-xs);
+  font-style: italic;
+  font-weight: 100;
+}
+
+footer {
+  margin: 48px 0px;
+}
+
+#invite {
+  font-weight: 700;
+}
+
+.infobox-caption {
+  margin: 0 auto;
+}
+
+#main-image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border-radius: 5px;
+}
+
+.div-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: var(--gray75);
+  padding: 10px;
+  margin: 0 0 50px 0;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+.quote {
+  font-style: italic;
+  margin: 100px 50px;
 }
