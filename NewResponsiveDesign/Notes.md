@@ -45,3 +45,17 @@ The key difference between tr[class="total"] and tr.total is that the first will
 
 In your case, tr.total will work. You can use this selector to target all td elements within your .total rows. Align the text to the right, and give them a padding of 0 0.25rem.
 
+### Learn Responsive Web Design by Building a Piano - Step 10
+The **::before** selector creates a pseudo-element which is the first child of the selected element, while the **::after** selector creates a pseudo-element which is the last child of the selected element. These pseudo-elements are often used to create cosmetic content, which you will see later in this project.
+Keep in mind that the content property is required for ::before and ::after to work, even if it is set to an empty string. These pseudo-elements are commonly used in combination with the content property to add decorative elements or generate additional visual content dynamically.
+
+### Learn Responsive Web Design by Building a Piano - Step 31
+You might have noticed the keys collapse when the browser window is smaller than 768px. Set overflow to hidden in the first .keys selector, to take care of this issue. This property will hide any element that is pushed outside the set width value of .keys.
+.keys {
+  background-color: #040404;
+  width: 949px;
+  height: 180px;
+  padding-left: 2px;
+  overflow: hidden;
+}
+
