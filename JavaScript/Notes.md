@@ -43,6 +43,7 @@ const ourArray = ["Stimpson", "J", "cat"];
 ourArray.shift();
 ourArray.unshift("Happy");
 
+<<<<<<< HEAD
 ### Equality Operator
 The most basic operator is the equality operator ==. The equality operator compares two values and returns true if they're equivalent or false if they are not. Note that equality is different from assignment (=), which assigns the value on the right of the operator to a variable on the left.
 
@@ -91,3 +92,30 @@ switch (val) {
 }
 Cases for 1, 2, and 3 will all produce the same result.
 
+=======
+### Objects
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"],
+  "bark": "bow-wow"
+};
+
+delete ourDog["bark"];
+
+Here's how we would add a bark property to ourDog:
+
+ourDog.bark = "bow-wow";
+
+To check if a property on a given object exists or not, you can use the .hasOwnProperty() method. someObject.hasOwnProperty(someProperty) returns true or false depending on if the property is found on the object or not.
+
+### Binary system review
+https://www.youtube.com/watch?v=ku4KOFQ-bB4
+
+### Conditional (Ternary) Operator
+The syntax is a ? b : c, where a is the condition, b is the code to run when the condition returns true, and c is the code to run when the condition returns false.
+
+
+I need this! map, filter, and reduce
+>>>>>>> b821d90bc2c4ec803c31be630b0b6d05f54aaf0c

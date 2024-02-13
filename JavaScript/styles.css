@@ -1,0 +1,82 @@
+/* Reset default margin and padding for body and container */
+body,
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Define the styles for the sticky text element */
+.sticky-text {
+  position: -webkit-sticky;
+  /* For Safari */
+  position: sticky;
+  top: 0;
+  /* Stick it to the top of the viewport */
+  background-color: #fff;
+  /* Background color of the sticky text element */
+  z-index: 100;
+  /* Make sure it's above other elements */
+  /* Add more styles as needed */
+}
+
+/* Define styles for the rest of the content */
+.content {
+  padding-top: 50px;
+  /* Adjust padding to create space for the sticky text */
+  /* Add more styles as needed */
+}
+
+.div-1 {
+  background-color: rgb(233, 103, 17);
+  width: 890px;
+  height: 400px;
+}
+
+.div-2 {
+  background-color: red;
+  width: 890px;
+  height: 400px;
+}
+
+.div-3 {
+  background-color: blue;
+  width: 890px;
+  height: 400px;
+}
+
+.div-4 {
+  background-color: gray;
+  width: 890px;
+  height: 400px;
+}
+
+.div-5 {
+  background-color: pink;
+  width: 890px;
+  height: 400px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to the div */
+.spin {
+  width: 10px;
+  /* Set your desired width */
+  height: 10px;
+  /* Set your desired height */
+  background-color: yellow;
+  /* Set your desired background color */
+  margin: 10px;
+  /* Center the div horizontally */
+  position: relative;
+  animation: spin 2s linear infinite;
+  /* Adjust the duration as needed */
+}
