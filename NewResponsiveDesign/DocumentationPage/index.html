@@ -11,8 +11,8 @@
 <body>
   <main id="main-doc">
     <h1>JS Documentation</h1>
-    <section class="main-section">
-      <h2 id="introduction">Introduction</h2>
+    <section id="introduction" class="main-section">
+      <h2>Introduction</h2>
       <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language.
         Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its
         environment to provide programmatic control over them.</p>
@@ -34,8 +34,8 @@
       </ul>
       </p>
     </section>
-    <section class="main-section">
-      <h2 id="what-you-should-already-know">What you should already know</h2>
+    <section id="what-you-should-already-know" class="main-section">
+      <h2>What you should already know</h2>
       <p>This guide assumes you have the following basic background:
       <ul>
         <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
@@ -46,8 +46,8 @@
       </ul>
       </p>
     </section>
-    <section class="main-section">
-      <h2 id="javascript-and-java">JavaScript and Java</h2>
+    <section id="javascript-and-java" class="main-section">
+      <h2>JavaScript and Java</h2>
       <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript
         language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows
         most
@@ -66,16 +66,16 @@
         not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
       </p>
     </section>
-    <section class="main-section">
-      <h2 id="hello-world">Hello world</h2>
+    <section id="hello-world" class="main-section">
+      <h2>Hello world</h2>
       <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
         code:
       </p>
       <code>function greetMe(yourName) { alert("Hello " + yourName); } greetMe("World");</code>
       <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
     </section>
-    <section class="main-section">
-      <h2 id="variables">Variables</h2>
+    <section id="variables" class="main-section">
+      <h2>Variables</h2>
       <p>You use variables as symbolic names for values in your application. The names of variables, called
         identifiers,
         conform to certain rules.</p>
@@ -86,8 +86,8 @@
       <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape
         sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
     </section>
-    <section class="main-section">
-      <h2 id="declaring-variables">Declaring variables</h2>
+    <section id="declaring-variables" class="main-section">
+      <h2>Declaring variables</h2>
       <p>You can declare a variable in three ways:</p>
       <p>With the keyword var. For example,
         <code>var x = 42.</code>
@@ -108,8 +108,8 @@
       <p>This syntax can be used to declare a block scope local variable. See Variable scope below.</p>
 
     </section>
-    <section class="main-section">
-      <h2 id="variable-scope">Variable scope</h2>
+    <section id="variable-scope" class="main-section">
+      <h2>Variable scope</h2>
       <p>When you declare a variable outside of any function, it is called a global variable, because it is available
         to
         any other code in the current document. When you declare a variable within a function, it is called a local
@@ -130,8 +130,8 @@
       </p>
 
     </section>
-    <section class="main-section">
-      <h2 id="global-variables">Global variables</h2>
+    <section id="global-variables" class="main-section">
+      <h2>Global variables</h2>
       <p>Global variables are in fact properties of the global object. In web pages the global object is window, so
         you
         can set and access global variables using the window.variable syntax.</p>
@@ -139,8 +139,8 @@
         specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document,
         you can refer to this variable from an iframe as parent.phoneNumber.</p>
     </section>
-    <section class="main-section">
-      <h2 id="constants">Constants</h2>
+    <section id="constants" class="main-section">
+      <h2>Constants</h2>
       <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the
         same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain
         alphabetic, numeric, or underscore characters.
@@ -163,8 +163,8 @@
       </p>
 
     </section>
-    <section class="main-section">
-      <h2 id="data-types">Data types</h2>
+    <section id="data-types" class="main-section">
+      <h2>Data types</h2>
       <p>The latest ECMAScript standard defines seven data types:
       <ul>
         <li>Six data types that are primitives:</li>
@@ -187,8 +187,8 @@
         objects
         as named containers for values, and functions as procedures that your application can perform.</p>
     </section>
-    <section class="main-section">
-      <h2 id="if___else-statement">if...else statement</h2>
+    <section id="if___else-statement" class="main-section">
+      <h2>if...else statement</h2>
       <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to
         execute a statement if the condition is false. An if statement looks as follows:
         <code>
@@ -231,8 +231,8 @@
           </code>
       </p>
     </section>
-    <section class="main-section">
-      <h2 id="while-statement">while statement</h2>
+    <section id="while-statement" class="main-section">
+      <h2>while statement</h2>
       <p>A while statement executes its statements as long as a specified condition evaluates to true. A while
         statement
         looks as follows:
@@ -262,8 +262,8 @@
       </p>
       <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
     </section>
-    <section class="main-section">
-      <h2 id="function-declarations">Function declarations</h2>
+    <section id="function-declarations" class="main-section">
+      <h2>Function declarations</h2>
       <p>A function definition (also called a function declaration, or function statement) consists of the function
         keyword, followed by:
       <ul>
@@ -288,8 +288,8 @@
         calling
         function.</p>
     </section>
-    <section class="main-section">
-      <h2 id="reference">Reference</h2>
+    <section id="reference" class="main-section">
+      <h2>Reference</h2>
       <p>
       <ul>
         <li>All the documentation in this page is taken from MDN</li>
