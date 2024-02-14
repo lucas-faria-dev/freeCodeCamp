@@ -40,13 +40,13 @@
 
 /*end Code Font*/
 
-
 *,
 *::after,
 *::before {
   box-sizing: content-box;
   padding: 0;
   margin: 0;
+  scrollbar-color: var(--gray85) var(--gray75);
 }
 
 html {
@@ -61,11 +61,9 @@ body {
   max-width: 1200px;
   line-height: 1.5;
   color: var(--main-font-color);
-  text-align: center;
-  margin: auto auto;
+  margin: 50px auto;
   display: flex;
   justify-content: center;
-
 }
 
 code {
@@ -82,7 +80,6 @@ code {
 
 ul {
   box-sizing: border-box;
-  text-align: left;
   padding-left: 25px;
 }
 
@@ -113,48 +110,50 @@ a:visited {
   font-size: inherit;
 }
 
-.table-of-contents a,
-.table-of-contents a:visited {
+/* Debug */
+nav li a,
+nav li a:visited {
   text-decoration: none;
 }
 
-.table-of-contents a:hover {
+nav li a:hover {
   text-decoration: underline;
 }
 
-.table-of-contents ul {
+nav ul {
   list-style: none;
-  padding: 10px;
+  padding: 0;
 }
 
-.table-of-contents ul li {
-  margin: 15px 0;
-}
-
-.table-of-contents {
-  font-size: 14px;
-  max-width: 200px;
-  position: -webkit-sticky;
-  /* For Safari */
-  position: sticky;
-  top: 263px;
-  line-height: 2;
-  border: 1px solid transparent;
-  border-left-color: var(--gray75);
-  margin-left: 10px;
-  border-radius: 5px;
+#navbar {
   background-color: var(--gray90);
+  color: var(--gray15);
+  margin-right: 50px;
+  border: solid var(--gray75) 1px;
+  min-width: 300px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
 }
 
-#title-left-menu {
-  font-weight: 500;
-  text-align: left;
-  display: block;
-  background-color: var(--gray15);
-  color: var(--gray75);
-  border-radius: 3px;
+.nav-link {
+  line-height: 2;
+  padding: 16px 8px;
+  text-align: justify;
+}
+
+#navbar li {
+  border: solid transparent 1px;
+  border-top-color: var(--gray75);
+}
+
+#navbar li:last-child {
+  border-bottom-color: var(--gray75);
 }
 
 #main-doc {
-  max-width: 1000px;
+  position: absolute;
+  margin-left: 320px;
+  padding: 0px 50px 120px 50px;
 }
