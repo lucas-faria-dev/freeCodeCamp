@@ -11,6 +11,14 @@
   --gray80: #2a2a40;
   --gray85: #1b1b32;
   --gray90: #0a0a23;
+  --space-none: 0;
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-base: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 40px;
+  --space-xxl: 48px;
 }
 
 /* Main Fonts */
@@ -58,12 +66,13 @@ body {
   background-color: var(--gray85);
   font-size: 20px;
   font-weight: 300;
-  max-width: 1200px;
   line-height: 1.5;
   color: var(--main-font-color);
-  margin: 50px auto;
+  min-width: 665px;
+  max-width: 1400px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  margin: auto;
 }
 
 code {
@@ -80,26 +89,25 @@ code {
 
 ul {
   box-sizing: border-box;
-  padding-left: 25px;
+  padding-left: var(--space-m);
 }
 
 h1,
-h2 {
+header {
   line-height: 2;
 }
 
 h1 {
-  margin: 48px 0;
+  margin: var(--space-xxl) var(--space-none);
 }
 
-h2 {
-  margin: 16px 0;
+header {
+  margin: var(--space-base) var(--space-none);
 }
 
 p {
   text-align: justify;
-  margin: 8px 0 16px 0;
-  margin: 20px auto;
+  margin: var(--space-m) auto;
 }
 
 a,
@@ -110,7 +118,10 @@ a:visited {
   font-size: inherit;
 }
 
-/* Debug */
+#menu header {
+  padding: var(--space-none) var(--space-s);
+}
+
 nav li a,
 nav li a:visited {
   text-decoration: none;
@@ -122,24 +133,12 @@ nav li a:hover {
 
 nav ul {
   list-style: none;
-  padding: 0;
-}
-
-#navbar {
-  background-color: var(--gray90);
-  color: var(--gray15);
-  margin-right: 50px;
-  border: solid var(--gray75) 1px;
-  min-width: 300px;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100%;
+  padding: var(--space-none);
 }
 
 .nav-link {
   line-height: 2;
-  padding: 16px 8px;
+  padding: var(--space-base) var(--space-s);
   text-align: justify;
 }
 
@@ -152,8 +151,37 @@ nav ul {
   border-bottom-color: var(--gray75);
 }
 
+#navbar {
+  background-color: var(--gray90);
+  color: var(--gray15);
+  margin-right: var(--space-xxl);
+  border: solid var(--gray75) 1px;
+  min-width: 300px;
+}
+
 #main-doc {
-  position: absolute;
-  margin-left: 320px;
-  padding: 0px 50px 120px 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--space-m) 0px 0px;
+}
+
+
+@media only screen and (max-width: 980px) {
+
+  #navbar {
+    width: 100%;
+  }
+
+  #navbar ul {
+    text-align: center;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  #main-doc {
+    padding: 0 var(--space-m) 0px var(--space-m);
+  }
+
 }

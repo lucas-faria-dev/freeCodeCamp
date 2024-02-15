@@ -59,3 +59,61 @@ You might have noticed the keys collapse when the browser window is smaller than
   overflow: hidden;
 }
 
+The position property in CSS is used to control the positioning of an element in a document. It's one of the fundamental properties for layout control. The position property can take several values, and each value determines how the element is positioned within its containing element or the entire document.
+
+Here are the main values for the position property:
+
+Static (Default):
+
+Elements are positioned according to the normal flow of the document.
+The top, right, bottom, and left properties have no effect.
+This is the default value.
+css
+Copy code
+.example {
+  position: static;
+}
+Relative:
+
+Elements are positioned relative to their normal position in the document flow.
+The top, right, bottom, and left properties can be used to offset the element from its normal position.
+css
+Copy code
+.example {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+Absolute:
+
+The element is removed from the normal document flow, and its position is calculated relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+If there is no positioned ancestor, it's positioned relative to the initial containing block (usually the <html> element).
+css
+Copy code
+.example {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+Fixed:
+
+The element is removed from the normal document flow, and its position is calculated relative to the viewport (browser window).
+It remains fixed in its position even when the page is scrolled.
+css
+Copy code
+.example {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+Sticky:
+
+The element is treated as relative positioned until it crosses a specified point, then it is treated as fixed positioned.
+The specified point is determined by the values of top, right, bottom, and left.
+css
+Copy code
+.example {
+  position: sticky;
+  top: 50px;
+}
+Using the position property allows you to create complex layouts and control the placement of elements on the page. Understanding how each value works and when to use them is crucial for effective web design.
