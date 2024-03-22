@@ -43,6 +43,56 @@ const ourArray = ["Stimpson", "J", "cat"];
 ourArray.shift();
 ourArray.unshift("Happy");
 
+<<<<<<< HEAD
+### Equality Operator
+The most basic operator is the equality operator ==. The equality operator compares two values and returns true if they're equivalent or false if they are not. Note that equality is different from assignment (=), which assigns the value on the right of the operator to a variable on the left.
+
+### Strict Equality Operator
+Strict equality (===) is the counterpart to the equality operator (==). However, unlike the equality operator, which attempts to convert both values being compared to a common type, the strict equality operator does not perform a type conversion.
+
+If the values being compared have different types, they are considered unequal, and the strict equality operator will return false.
+
+!=
+!== (do not convert data types while comparing)
+>
+<
+>=
+<=
+&& (logical **and** operator)
+|| (logical **or** operator)
+
+### Switch
+ A switch statement compares the value to the case statements which define various possible values. Any valid JavaScript statements can be executed inside a case block and will run from the first matched case value until a break is encountered.
+
+'case' values are tested with strict equality (===). The break tells JavaScript to stop executing statements. If the break is omitted, the next statement will be executed.
+
+switch (num) {
+  case value1:
+    statement1;
+    break;
+  case value2:
+    statement2;
+    break;
+...
+  default:
+    defaultStatement;
+    break;
+}
+
+
+let result = "";
+switch (val) {
+  case 1:
+  case 2:
+  case 3:
+    result = "1, 2, or 3";
+    break;
+  case 4:
+    result = "4 alone";
+}
+Cases for 1, 2, and 3 will all produce the same result.
+
+=======
 ### Objects
 const ourDog = {
   "name": "Camper",
@@ -68,3 +118,4 @@ The syntax is a ? b : c, where a is the condition, b is the code to run when the
 
 
 I need this! map, filter, and reduce
+>>>>>>> b821d90bc2c4ec803c31be630b0b6d05f54aaf0c
